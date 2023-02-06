@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmainactivity"
+    tools:context=".QuizResults">
+
+    <ImageView
+        android:id="@+id/congratulationsIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/congratulations" />
+
+    <ImageView
+        android:id="@+id/monkey"
+        android:layout_width="215dp"
+        android:layout_height="219dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/monkey" />
+
+    <TextView
+        android:id="@+id/successTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/congratulationsIcon"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="អ្នកបានធ្វើវារួចរាល់ដោយជោគជ័យ"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/successTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-23dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/IdCorrectAnswers"
+            android:layout_width="288dp"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:text="ចម្លើយត្រឹមត្រូវរបស់អ្នកគឺ:"
+            android:textColor="#00C853"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/CorrectAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#00C853"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/IdInCorrectAnswers"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="ចម្លើយខុសរបស់អ្នកគឺ"
+            android:textColor="#DD2C00"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/InCorrectAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#DD2C00"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startNewQuizBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bluecolor13"
+        android:text="ទៅទំព័រដើម"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
